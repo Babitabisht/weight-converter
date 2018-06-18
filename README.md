@@ -1,0 +1,1 @@
+This is a simple javascript application of Weight converter , it takes the input in pounds and convert it into grams , kilograms and ounces. 

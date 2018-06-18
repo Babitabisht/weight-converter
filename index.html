@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">WEIGHT-CONVERTING  APPLICATION</h1>
+<input type="number" name="" id="lbsInput" class="form-control" placeholder="Enter in pounds">
+<div class="card bg-info">
+    <div class="card-body">
+        <p>In grams</p>
+        <div id="g"></div>
+    </div>
+</div>
+<div class="card bg-success">
+    <div class=" card-body">
+<p>In kilograms</p>
+<div id="kg"></div>
+    </div>
+</div>
+<div class="card bg-danger">
+    <div class=" card-body">
+<p>In ounces</p>
+<div id="O"></div>
+    </div>
+</div>
+    </div>
+    <script>
+   console.log('fine')
+document.getElementById('lbsInput').addEventListener('input', (e)=>{
+let lbs =e.target.value;
+console.log(lbs);
+document.getElementById('g').innerHTML=lbs/0.0022046;
+document.getElementById('kg').innerHTML=lbs/2.2046;
+document.getElementById('O').innerHTML=lbs/0.0022046;
+console.log('hello')
+});
+    
+    </script>
+</body>
+</html>
